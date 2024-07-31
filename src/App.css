@@ -39,7 +39,7 @@ body{
     margin: 6px 0px;
     background-color: #e3e3e3;
 }
-.item p{
+.item p , .item .delete{
     padding: 8px 2px;
     width: 100%;
     font-size: 18px;
@@ -47,6 +47,10 @@ body{
     border: 1px solid #08080833;
 }
 .item .delete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background-color: #b90c0c;
     color: #e3e3e3;
     font-size: 20px;
@@ -90,4 +94,26 @@ form input[type="submit"]:hover{
     padding: 10px;
     font-size: 18px;
     border: 2px solid #08080833;
+}
+/* quantit*/
+.quantity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 0 .5rem;
+}
+
+.quantity *{
+    border: none !important;
+}
+
+.quantity button{
+    outline: none;
+    padding: .3rem 1.2rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: green;
+    cursor: pointer;
 }

@@ -3,7 +3,8 @@ import React, {Component} from 'react';
 class addItem extends Component {
     state = {
         product: '',
-        price: ''
+        price: '',
+        qty:1
     }
 
     handleChange = (e) => {
